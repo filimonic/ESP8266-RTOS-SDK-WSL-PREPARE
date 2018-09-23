@@ -1,9 +1,9 @@
-*. Install WSL:
-	Run Powershell.exe under Administrator
-	Run command:
-		Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-	Reboot
-*. Install Debian WSL
+#Install WSL:
+Run Powershell.exe under Administrator
+Run command:
+> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Reboot
+#Install Debian WSL
 	Go to https://www.microsoft.com/en-us/p/debian-gnu-linux/9msvkqc78pk6
 	Click Get
 *. Run Debian WSL
