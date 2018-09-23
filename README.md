@@ -17,7 +17,7 @@ echo '#!/bin/sh' > ~/esp8266i.sh
 echo 'mkdir ~/esp' >> ~/esp8266i.sh
 echo 'sudo apt-get -y update' >> ~/esp8266i.sh
 echo 'sudo apt-get -y ugrade' >> ~/esp8266i.sh
-echo 'sudo chmod 666 /dev/ttyS*' >> ~/esp8266i.sh
+echo 'sudo chmod --changes 666 /dev/ttyS*' >> ~/esp8266i.sh
 echo 'sudo apt-get -y install git build-essential bison flex libncurses-dev gperf python python-serial' >> ~/esp8266i.sh
 echo 'cd ~/esp' >> ~/esp8266i.sh
 echo 'git clone https://github.com/espressif/ESP8266_RTOS_SDK.git' >> ~/esp8266i.sh
@@ -25,8 +25,7 @@ echo 'wget https://dl.espressif.com/dl/xtensa-lx106-elf-linux64-1.22.0-88-gde0bd
 echo 'tar -zxf xtensa-lx106-elf-linux64-1.22.0-88-gde0bdc1-4.8.5.tar.gz' >> ~/esp8266i.sh
 echo 'rm -f xtensa-lx106-elf-linux64-1.22.0-88-gde0bdc1-4.8.5.tar.gz' >> ~/esp8266i.sh
 echo "echo 'export IDF_PATH=~/esp/ESP8266_RTOS_SDK' >> ~/.profile" >> ~/esp8266i.sh
-echo "echo 'export PATH=$PATH:~/esp/xtensa-lx106-elf/bin' >> ~/.profile" >> ~/esp8266i.sh
+echo "echo 'export PATH=\$PATH:~/esp/xtensa-lx106-elf/bin' >> ~/.profile" >> ~/esp8266i.sh
 chmod +x ~/esp8266i.sh
 ~/esp8266i.sh
 rm -f ~/esp8266i.sh
-
