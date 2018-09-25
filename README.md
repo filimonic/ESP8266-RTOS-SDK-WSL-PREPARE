@@ -1,4 +1,6 @@
-# Install WSL:
+# Create ESP8266 RTOS SDK build envinronment on Windows 10 using Windows Subsystem for Linux (WSL)
+
+## Install WSL:
 
 Run Powershell.exe under Administrator
 
@@ -8,23 +10,23 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 ```
 Reboot
 
-# Install Debian WSL
+## Install Debian WSL
 
 Go to https://www.microsoft.com/en-us/p/debian-gnu-linux/9msvkqc78pk6
 
 Click Get
 
-# Run Debian WSL
+## Run Debian WSL
 
 Create a user for Debian WSL
 
 Create password for your user
 
-# Make your SUDO session ok:
+## Make your user a call SUDO without password prompt:
 ```
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 ```
-# Go	 
+## Go	 
 ```
 echo '#!/bin/sh' > ~/esp8266i.sh
 echo 'mkdir ~/esp' >> ~/esp8266i.sh
