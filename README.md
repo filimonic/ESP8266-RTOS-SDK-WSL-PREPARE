@@ -29,7 +29,7 @@ echo "${USER} ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${USER}
 echo '#!/bin/sh' > ~/esp8266i.sh
 echo 'mkdir ~/esp' >> ~/esp8266i.sh
 echo 'sudo apt-get -y update' >> ~/esp8266i.sh
-echo 'sudo apt-get -y ugrade' >> ~/esp8266i.sh
+echo 'sudo apt-get -y upgrade' >> ~/esp8266i.sh
 echo "echo 'sudo chmod --changes 666 /dev/ttyS*' >> ~/.profile" >> ~/esp8266i.sh
 echo 'sudo apt-get -y install git build-essential bison flex libncurses-dev gperf python python-serial' >> ~/esp8266i.sh
 echo 'cd ~/esp' >> ~/esp8266i.sh
